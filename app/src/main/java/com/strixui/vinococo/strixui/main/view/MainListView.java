@@ -12,6 +12,6 @@ import java.util.List;
 public interface MainListView{
 
 	void loadUiSample(List<UiType> uiSample);
-	void moveUiView(UiType uiType);
+	void moveToCalendar();
 
 }

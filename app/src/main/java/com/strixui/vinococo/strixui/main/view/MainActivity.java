@@ -51,12 +51,14 @@ public class MainActivity extends AppCompatActivity implements MainListView {
 	private View.OnClickListener onClickListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View v) {
-			presenter.onMoveUiView((UiType) v.getTag());
+			if (v.getTag() instanceof UiType) {
+				presenter.onMoveUiView((UiType) v.getTag());
+			}
 		}
 	};
 
 	@Override
-	public void moveUiView(UiType uiType) {
+	public void moveToCalendar() {
 
 	}
 }

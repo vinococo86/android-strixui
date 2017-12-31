@@ -23,6 +23,12 @@ public class MainViewPresenter {
 	}
 
 	public void onMoveUiView(UiType type) {
-		view.moveUiView(type);
+		switch (type) {
+			case CALENDAR:
+				view.moveToCalendar();
+				break;
+			default:
+				break;
+		}
 	}
 }

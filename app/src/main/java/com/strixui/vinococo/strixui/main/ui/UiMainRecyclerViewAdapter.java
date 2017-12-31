@@ -33,12 +33,13 @@ public class UiMainRecyclerViewAdapter extends RecyclerView.Adapter<UiMainRecycl
 	}
 
 	@Override
-	public void onBindViewHolder(MainItemViewHolder holder, int position) {
+	public void onBindViewHolder(MainItemViewHolder holder, final int position) {
 		holder.itemView.setItemData(getItem(position));
 		holder.itemView.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				if (onItemClick != null) {
+					v.setTag(getItem(position));
 					onItemClick.onClick(v);
 				}
 			}
