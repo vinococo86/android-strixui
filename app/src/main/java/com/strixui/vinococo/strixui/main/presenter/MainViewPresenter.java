@@ -27,6 +27,9 @@ public class MainViewPresenter {
 			case CALENDAR:
 				view.moveToCalendar();
 				break;
+			case TEXT_VIEW:
+				view.moveToTextView();
+				break;
 			default:
 				break;
 		}

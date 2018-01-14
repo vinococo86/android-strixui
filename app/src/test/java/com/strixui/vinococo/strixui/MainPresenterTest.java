@@ -3,7 +3,6 @@ package com.strixui.vinococo.strixui;
 import com.strixui.vinococo.strixui.main.model.UiType;
 import com.strixui.vinococo.strixui.main.presenter.MainViewPresenter;
 import com.strixui.vinococo.strixui.main.view.MainListView;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

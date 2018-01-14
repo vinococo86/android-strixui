@@ -13,5 +13,6 @@ public interface MainListView{
 
 	void loadUiSample(List<UiType> uiSample);
 	void moveToCalendar();
+	void moveToTextView();
 
 }

@@ -1,5 +1,6 @@
 package com.strixui.vinococo.strixui.main.view;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import com.strixui.vinococo.strixui.R;
 import com.strixui.vinococo.strixui.databinding.ActivityMainBinding;
 import com.strixui.vinococo.strixui.main.model.UiType;
 import com.strixui.vinococo.strixui.main.presenter.MainViewPresenter;
+import com.strixui.vinococo.strixui.main.text.TextViewActivity;
 import com.strixui.vinococo.strixui.main.ui.UiMainRecyclerViewAdapter;
 
 import java.util.List;
@@ -60,5 +62,10 @@ public class MainActivity extends AppCompatActivity implements MainListView {
 	@Override
 	public void moveToCalendar() {
 
+	}
+
+	@Override
+	public void moveToTextView() {
+		startActivity(TextViewActivity.startActivity(this));
 	}
 }
